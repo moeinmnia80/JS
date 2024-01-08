@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link rel="stylesheet" href="./style/style.css">
+      <link rel="stylesheet" href="./style/reset.css">
+      <title>Todo App</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <section class="header">
+          <h1 class="header__title">BotoStart | TodoApp</h1>
+          <div class="header-todo">
+              <label>
+                  <input class="todo__text-input" type="text" name="todo-subject" placeholder="Add todo ..." id="task-input">
+              </label>
+              <label>
+                  <input class="todo__date-input" type="date" name="date" id="date-input">
+              </label>
+              <div class="header__button">
+                  <a class="header__links" id="add-button" href="#">Add</a>
+                  <a class="header__links" id="edit-button" href="#">Edit</a>
+              </div>
+          </div>
+            <div class="buttons">
+                <div class="buttons__grouping">
+                    <a href="#" class="grouping__links" data-filter="All">All</a>
+                    <a href="#" class="grouping__links" data-filter="Pending">Pending</a>
+                    <a href="#" class="grouping__links" data-filter="Completed">Complete</a>
+                </div>
+                <div class="buttons__delete">
+                    <a href="#" class="delete__link" id="delete-all-button">Delete All</a>
+                </div>
+            </div>
+        </section>
+        <section class="alert">
+
+        </section>
+      </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="main__todo-data">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-todo-data">
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    <script src="./script/app.js"></script>
+  </body>
+</html>

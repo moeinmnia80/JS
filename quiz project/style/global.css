@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #DEC0F1;
+}
+.container{
+    max-width: 100rem;
+    margin: 0 auto;
+}

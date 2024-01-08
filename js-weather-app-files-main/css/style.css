@@ -1,0 +1,231 @@
+:root {
+  --color-primary: #4d0de5;
+  --color-secondary: rgba(125, 161, 247, 0.3);
+  --color-warning: #fae362;
+  --color-error: #f75e4b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(13deg, var(--color-primary) 47%, var(--color-secondary) 100%);
+  border-bottom-left-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+  padding: 7rem 0 12rem 0;
+  box-shadow: 0 2rem 10rem 0 var(--color-secondary);
+}
+.header__inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+}
+.header__locate{
+  width: 3rem;
+}
+#location-img{
+  width: 100%;
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+#location-img:hover{
+  transform: scale(1.3);
+}
+.header label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#location-search{
+  width: 25rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: .4rem;
+  padding: 0 7rem 0 1rem;
+  outline: none;
+  transition: all .2s ease-in;
+}
+#location-search-button{
+  position: absolute;
+  right: 0;
+  width: 6rem;
+  height: 2.5rem;
+  background-color: var(--color-warning);
+  border: none;
+  border-top-right-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+  cursor: pointer;
+}
+#location-search:focus{
+  box-shadow: 0 0 1rem 0 var(--color-warning);
+}
+#weather{
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  width: 38rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 2.5rem 8rem -2.5rem var(--color-secondary);
+  border-radius: 4rem;
+}
+.header__info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header__title{
+  color: var(--color-primary);
+}
+.header__Weather{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.weather__condition{
+  font-size: 1.4rem;
+  color: #757575;
+  margin-right: 1rem;
+}
+.weather__temp{
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+.header__condition{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+}
+.header__text{
+
+}
+#humidity,
+#wind-speed{
+  font-weight: bolder;
+  color: var(--color-secondary);
+}
+.forecast-weather{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-warning);
+  border-radius: 4rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  padding: 1rem;
+  margin-top: 20rem;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  perspective: 500px;
+  transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.forecast-weather.active {
+  cursor: grabbing;
+  transform: scale(1);
+}
+.forecast-weather__node{
+  min-width: 20rem;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 100;
+  background-color: #fff;
+  box-shadow: 0 2.5rem 8rem -2.5rem rgba(0, 0, 0, .3);
+  border-radius: 4rem;
+  margin-right: 1rem;
+  position: relative;
+}
+.forecast-weather__node:last-child{
+  margin-right: 0;
+}
+.weather__text{
+  /*font-size: 2rem;*/
+  font-family: "iran yekan", sans-serif;
+}
+.forecast-weather__temp{
+  color: var(--color-secondary);
+  margin-top: 1rem;
+}
+.weather__main{
+  color: var(--color-secondary);
+  margin-top: 1rem;
+}
+.weather__date{
+  font-size: 1rem;
+  color: #757575;
+  position: absolute;
+  bottom: 1rem;
+}
+#modal{
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30rem;
+  height: 4rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: .5rem;
+  font-size: 2rem;
+  z-index: 99;
+}
+.modal__button{
+  position: absolute;
+  left: 1rem;
+}
+.modal__text{
+  margin-left: .3rem;
+}
+#loader{
+  width: 10rem;
+  height: 10rem;
+  border: .3rem solid;
+  border-color: #7161EF transparent #7161EF transparent;
+  border-radius: 50%;
+  display: inline-block;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

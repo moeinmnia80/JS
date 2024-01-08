@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Botostart | Weather App</title>
+  </head>
+  <body>
+    <header>
+      <div id="modal">
+        <div class="modal__button"></div>
+        <div class="modal__text"></div>
+      </div>
+      <div class="container">
+        <section class="header">
+          <div class="header__inputs">
+            <div class="header__locate">
+              <img src="./img/location.png" alt="location" id="location-img">
+            </div>
+            <label>
+              <input type="text" placeholder="Enter city name" id="location-search">
+              <button id="location-search-button">Search</button>
+            </label>
+          </div>
+          <div id="weather">
+            <div id="loader"></div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="forecast-weather">
+
+        </section>
+      </div>
+    </main>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

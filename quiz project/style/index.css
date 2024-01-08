@@ -1,0 +1,34 @@
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.content__header{
+    font-size: 3rem;
+    color: #7161EF;
+    margin-bottom: 3rem;
+}
+.content__options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: max-content;
+}
+.content__link{
+    width: 100%;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #7161EF;
+    padding: 1rem 4.5rem;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    transition: all .3s ease-in-out;
+}
+.content__link:hover{
+    background-color: #7161EF;
+    color: #fff;
+}

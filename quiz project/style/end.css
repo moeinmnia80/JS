@@ -1,0 +1,75 @@
+#loader{
+    width: 10rem;
+    height: 10rem;
+    border: .3rem solid;
+    border-color: #7161EF transparent #7161EF transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.score{
+    margin-bottom: 6rem;
+}
+.score__questions{
+    text-align: center;
+    line-height: 9rem;
+    width: 9rem;
+    height: 9rem;
+    background-color: #7161EF;
+    border-radius: 1.5rem;
+    color: #fff;
+    font-size: 5rem;
+}
+.player__information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#player-name{
+    width: 23rem;
+    height: 4.5rem;
+    padding-left: 2rem;
+    border-radius: 1.5rem;
+    border: 2px solid #fff;
+    background-color: #DEC0F1;
+    outline: none;
+    margin-bottom: 3rem;
+    transition: .4s;
+}
+#player-name:focus{
+    border-color: #7161EF;
+}
+.header__links{
+    text-decoration: none;
+    color: #7161EF;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    width: 23rem;
+    height: 4.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    font-size: 1.5rem;
+    transition: all .4s;
+}
+.header__links:hover{
+    background-color: #7161EF;
+    color: #fff;
+}

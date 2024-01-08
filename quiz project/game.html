@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./style/game.css">
+        <link rel="stylesheet" href="./style/global.css">
+        <title>Quiz Game</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <section class="content">
+                    <span id="loader"></span>
+                    <p id="error">Went Wrong</p>
+                    <div class="content__questions">
+                        <div class="question__title">
+                            <p class="question__text">Question Number: <span id="question-number">1</span></p>
+                            <p class="question__text">score: <span id="question-score">0</span></p>
+                        </div>
+                        <div class="question__box">
+                            <p id="question">question</p>
+                            <button class="answer">1</button>
+                            <button class="answer">2</button>
+                            <button class="answer">3</button>
+                            <button class="answer">4</button>
+
+                        </div>
+                        <div class="question__condition">
+                            <button id="condition-next">Next</button>
+                            <button id="condition-finish">Finish</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script src="./script/game.js" type="module"></script>
+        <script src="./script/helper.js" type="module"></script>
+    </body>
+</html>

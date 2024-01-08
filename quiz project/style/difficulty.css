@@ -1,0 +1,25 @@
+.header,
+.header__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    height: 100vh;
+    flex-direction: column;
+}
+.header__link{
+    width: 23rem;
+    height: 4.5rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #7161EF;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    transition: all .4s;
+}
+.header__link:hover{
+    background-color: #7161EF;
+    color: #fff;
+}

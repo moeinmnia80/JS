@@ -1,0 +1,121 @@
+#loader{
+    width: 10rem;
+    height: 10rem;
+    border: .3rem solid;
+    border-color: #7161EF transparent #7161EF transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.container{
+    max-width: 70rem;
+}
+.content{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content__questions{
+    display: none;
+    width: 100%;
+}
+.question__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question__text{
+    font-size: 2rem;
+    color: #7161EF;
+    margin-bottom: 2rem;
+}
+#question-number,
+#question-score{
+    background-color: #fff;
+    color: #7161EF;
+    padding: .3rem 1rem;
+    border-radius: .5rem;
+
+}
+.question__box{
+    font-size: 2rem;
+}
+#question{
+    background-color: #7161EF;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+.answer{
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: left;
+    padding: .75rem 1.5rem;
+    transition: background-color .4s ease-in;
+}
+.answer:last-child{
+    margin-bottom: 2rem;
+}
+.answer:hover{
+    background-color: #DEC0F1;
+}
+.question__condition{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#condition-next,
+#condition-finish{
+    color: #7161EF;
+    padding: .75rem 1.25rem;
+    border-radius: .5rem;
+    background-color: transparent;
+    border: .2rem solid #7161EF;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+#condition-finish{
+    margin-left: 1rem;
+}
+#condition-next:hover,
+#condition-finish:hover{
+    background-color: #7161EF;
+    color: #fff;
+}
+.correct{
+    background-color: #5bd7bc;
+    color: black;
+}
+.correct:hover{
+    background-color: #5bd7bc;
+}
+.incorrect{
+    background-color: #fe6681;
+    color: black;
+}
+.incorrect:hover{
+    background-color: #fe6681;
+}
+.finally:hover{
+    background-color: #fff;
+}
+#error{
+    font-size: 4.5rem;
+    color: #7161EF;
+    display: none;
+}

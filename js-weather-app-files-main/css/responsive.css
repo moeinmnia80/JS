@@ -1,0 +1,22 @@
+@media screen and (max-width: 420px) {
+    #weather{
+        width: 25rem;
+    }
+    .header__condition{
+        flex-direction: column;
+    }
+    .header__condition p:last-child{
+        margin-top: 1rem;
+    }
+    #location-search{
+        width: 20rem;
+    }
+    #modal{
+        width: 20rem;
+        font-size: 1.3rem;
+    }
+    .forecast-weather__node{
+        min-width: 15rem;
+        height: 20rem;
+    }
+}

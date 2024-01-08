@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <section class="header">
+          <h1 class="header__title">Monet Store</h1>
+          <div class="header_buttons">
+            <a href="index.html" class="header__link">Home<i class="fa-solid fa-house"></i></a>
+            <button id="logout">Logout <i class="fa-solid fa-right-from-bracket"></i></button>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="main">
+          <h1 class="main__title">Users List </h1>
+          <div id="loader"></div>
+          <div class="users">
+
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="./dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+.header__title{
+    font-size: 2rem;
+    color: var(--color-primary);
+    user-select: none;
+}
+.header_buttons{
+}
+.header__link{
+    color: #fff;
+    background-color: #000;
+    border: .2rem solid transparent;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-decoration: none;
+    user-select: none;
+    transition: all .4s;
+}
+.header__link:hover{
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+}
+#logout{
+    color: #fff;
+    background-color: var(--color-error);
+    border-radius: .5rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: all .4s;
+}
+#logout:hover{
+    color: var(--color-error);
+    background-color: rgba(247, 94, 75, 0.3);
+}
+.fa-house,
+.fa-right-from-bracket{
+    margin-left: .5rem;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+#loader{
+    align-self: center;
+}
+.main__title{
+    font-size: 2rem;
+    user-select: none;
+}
+.users{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+/******************/
+/*   Users Info   */
+/******************/
+
+.users__info{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+    border: .2rem solid transparent;
+    border-radius: .5rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    user-select: none;
+    transition: .4s;
+}
+.users__info:hover{
+    border-color: var(--color-primary);
+    box-shadow: 0 0 2rem .1rem var(--color-secondary);
+}
+.info__number{
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: .5rem;
+    padding: .75rem 1rem;
+}
+.info__name,
+.info__username,
+.info__email,
+.info__phone,
+.info__address{
+    width: 10%;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.name__text,
+.username__text,
+.email__text,
+.phone__text,
+.address__text{
+    color: #000;
+    margin-top: .2rem;
+}
+.info__username{
+    width: 10%;
+}
+.info__email{
+    width: 15%;
+}
+.info__address{
+    width: 15%;
+}

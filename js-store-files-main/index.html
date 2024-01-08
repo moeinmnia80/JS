@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botostart Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <section class="header">
+          <h1 class="header__title">Monet Store</h1>
+          <div class="header__buttons">
+            <div class="header__shop-basket">
+              <span id="shop-basket__count">0</span>
+              <a href="cart.html" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
+            <a href="./auth.html" id="login">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="./dashboard.html" id="dashboard">Dashboard <i class="fa-solid fa-house"></i></a>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="main">
+          <h1 class="main__title">Shop</h1>
+          <div class="main-search">
+            <label>
+              <input type="text" id="main-search-input" placeholder="Search Products">
+              <button class="main-search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </label>
+          </div>
+          <div class="main-products">
+            <div id="loader"></div>
+            <div id="left">
+
+            </div>
+            <div id="right">
+              <div class="category-title">
+                <i class="fa-solid fa-sliders"></i>
+                <p  class="category__text">Categories</p>
+              </div>
+              <button class="category__button active" data-category="All">All</button>
+              <button class="category__button" data-category="Electronics">Electronics</button>
+              <button class="category__button" data-category="Jewelery">Jewelery</button>
+              <button class="category__button" data-category="Men's clothing">Men's clothing</button>
+              <button class="category__button" data-category="Women's clothing">Women's clothing</button>
+              </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
