@@ -1,5 +1,5 @@
+// for floor => +1
 const randomNumber = Math.floor(Math.random() * 100 + 1);
-console.log(randomNumber);
 let numberOfGuess = 1;
 const validation = (value) => {
   if (isNaN(value)) {
