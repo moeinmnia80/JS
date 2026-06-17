@@ -5,8 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>GuessNumberProject</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="bg-primary">
+    <div class="notification"></div>
+    <div class="modal bg-transparent bg-blur-5 d-none">
+      <div class="modal__wrapper">
+        <h3 class="modal__title font-2xl align-center"></h3>
+        <button class="btn mh-10 rounded-xsm" id="newGame" type="submit">
+          New Game
+        </button>
+      </div>
+    </div>
+    <form
+      class="guest guest--primary bg-secondary border border--muted rounded-lg p-30 fade-up"
+    >
+      <label class="guest__label" for="guestNumber">
+        Please enter a number between 1 to 100
+      </label>
+      <input
+        type="number"
+        class="guest__input border border--muted rounded-xsm p-10 focus:border-primary"
+        id="guestNumber"
+        name="number"
+        min="1"
+        max="100"
+        required
+      />
+      <button
+        class="btn rounded-xsm"
+        id="check-btn"
+        type="submit"
+        disabled="true"
+      >
+        Check
+      </button>
+      <div class="guest__info text-secondary">
+        <div class="guide">
+          ↪ Number of guest ---
+          <span id="guest-number">0</span>
+          <span class="text-danger text-bold"> &les; 10 </span>
+        </div>
+        <div class="guide guide--duplicate" id="duplicate">
+          ↪ Please don't enter a duplicate number
+        </div>
+      </div>
+    </form>
     <script src="./app.js"></script>
   </body>
 </html>
